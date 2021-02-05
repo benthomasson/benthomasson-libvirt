@@ -1,0 +1,11 @@
+---
+type: object
+properties:
+  vms:
+    type: array:
+    items:
+      $ref: '#/definitions/vm'
+definitions:
+  vm:
+    type: object
+...

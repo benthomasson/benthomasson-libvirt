@@ -1,0 +1,5 @@
+rules:
+  - rule_selector: root.vms.index
+    inventory_selector: node.host
+    create:
+      tasks: benthomasson.libvirt.create_vm

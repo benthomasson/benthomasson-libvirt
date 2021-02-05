@@ -1,0 +1,8 @@
+- name: "define {{node.name}}"
+  community.libvirt.virt:
+    command: define
+    xml: "{{ lookup('template', node.template) }}"
+- name: "start {{node.name}}"
+  community.libvirt.virt:
+    name: "{{node.name}}"
+    state: running
