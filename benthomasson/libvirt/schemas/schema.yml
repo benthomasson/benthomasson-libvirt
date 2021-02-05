@@ -2,7 +2,7 @@
 type: object
 properties:
   vms:
-    type: array:
+    type: array
     items:
       $ref: '#/definitions/vm'
 definitions:
